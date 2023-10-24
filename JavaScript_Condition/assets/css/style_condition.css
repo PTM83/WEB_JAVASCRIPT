@@ -1,0 +1,22 @@
+* {
+    padding: 0rem;
+    margin: 0rem;
+}
+
+h1 {
+    font-size:5rem;
+    color:red;
+    text-align: center;
+}
+
+.ColorSelection {
+    display:flex;
+    flex-direction: row;
+    gap: 0.7rem;
+}
+
+#border_image {
+    width: 50%;
+    height:50%;
+    border-radius:50%;
+}
