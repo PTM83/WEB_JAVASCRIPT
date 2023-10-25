@@ -20,3 +20,46 @@ h1 {
     height:50%;
     border-radius:50%;
 }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Esto ocupa el alto completo de la ventana del navegador */
+}
+
+.password-box {
+    display: flex;
+    gap: 0.5rem; /* Esto establece un espacio entre los selectores */
+}
+
+button {
+    margin: 1rem 0; /* Esto añade espacio arriba y abajo del botón */
+    height:2.5rem;
+    width:12rem;
+    background-color: #4CAF50;
+    border-radius: 0.75rem;
+    border: 2px solid black;
+    font-size:1.3rem;
+}
+
+h2 {
+    font-weight:900;
+    font-size:3rem;
+}
+
+.desf_3 {
+    height: 2.5rem;
+    width: 100%;
+}
+
+select option {
+    font-size:1rem;
+    color:blue;
+}
+
+#textPassword {
+    font-weight:900;
+    font-size:2rem;
+}
