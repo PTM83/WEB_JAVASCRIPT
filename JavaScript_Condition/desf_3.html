@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="./assets/css/style_condition.css">
+
+    <title>Password</title>
+</head>
+<body>
+
+<section class="container">
+    <h1>This Exercises you have to figure ir out the code</h1>
+    <h2>Guess the Password</h2>
+    <div class="password-box">
+        <select name="NumPass1" id="NumPass1" class="desf_3"></select>
+        <select name="NumPass2" id="NumPass2" class="desf_3"></select>
+        <select name="NumPass3" id="NumPass3" class="desf_3"></select>
+    </div>
+
+    <button onclick="correctPassword()">Ingresar</button>
+
+    <p id="textPassword"></p>
+</section>
+
+
+    <script>
+        for (let j = 1; j <= 3; j++) {
+            const selectNumber = document.getElementById(`NumPass${j}`);
+            for (let i = 0; i <= 9; i++) {
+                const optionNumber = document.createElement("option");
+                optionNumber.value = i.toString();
+                optionNumber.text= i;
+                selectNumber.appendChild(optionNumber);
+                console.log(i)
+            }
+        }
+
+
+        function correctPassword() {
+            var num1 = document.getElementById("NumPass1").value;
+            var num2 = document.getElementById("NumPass2").value;
+            var num3 = document.getElementById("NumPass3").value;
+
+            var totalNum = num1+num2+num3
+            var text1 = document.querySelector("#textPassword");
+            if (totalNum === "911") {
+                text1.innerHTML = "Password 1 correct"
+            } else if(totalNum === "714") {
+                text1.innerHTML = "Password 2 correct"
+            } else {
+                text1.innerHTML = "Password 1 and Password 2 are not correct"
+            }
+
+        }
+
+
+    </script>
+</body>
+</html>
