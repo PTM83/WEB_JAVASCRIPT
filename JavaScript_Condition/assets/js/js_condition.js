@@ -30,7 +30,27 @@ for (let i = 0; i < Border_Colors.length; i++) {
 }
 
 //Second Challenge//
+function sticker_answer() {
+    var sticker_num1 = parseInt(document.getElementById("in_first").value,10);
+    var sticker_num2 = parseInt(document.getElementById("in_second").value,10);
+    var sticker_num3 = parseInt(document.getElementById("in_third").value,10);
 
+    var answer_sticker =  document.getElementById("ans_sticker");
+
+    const TOTAL_STICKERS = sticker_num1+sticker_num2+sticker_num3;
+
+    if (TOTAL_STICKERS > 10) {
+        answer_sticker.innerHTML = "You can only choose 10 stickers in total";
+    }
+    else if (TOTAL_STICKERS < 10) {
+        answer_sticker.innerHTML = `You can still choose ${10 - TOTAL_STICKERS} stickers`;
+    }
+    else {
+        answer_sticker.innerHTML = "Awesome you have chosen exactly 10 Sticker!"
+    }
+
+    //alert(sticker_num1)//
+}
 
 //Third Challenge//
 for (let j = 1; j <= 3; j++) {
