@@ -21,7 +21,8 @@ h1 {
     border-radius:50%;
 }
 /*CHALLENGE TWO*/
-.images_section, .intput_section {
+.images_section, .intput_section,
+.button_stickers, .respond_stickers {
     display:flex;
     justify-content:center;
     gap:1rem;
@@ -35,6 +36,22 @@ h1 {
 .intput_section {
     padding: 0.5rem 0rem;
     gap:3.5rem;
+}
+
+.respond_stickers #ans_sticker {
+    font-width:900;
+    font-size:2.5rem;
+    text-align:center;
+}
+
+.button_stickers button {
+    margin: 1rem 0; /* Esto añade espacio arriba y abajo del botón */
+    height:2.5rem;
+    width:12rem;
+    background-color: #bcf5bc;
+    border-radius: 0.75rem;
+    border: 2px solid #0e5d0e;
+    font-size:1.3rem;
 }
 
 /*CHALLENGE THREE*/
