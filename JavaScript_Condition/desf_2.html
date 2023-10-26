@@ -19,14 +19,46 @@
             <img src="./assets/images/images_4.png" alt="Photo sticker of a serene nature scene with a solar panel farm in the foreground and wind turbines in the background. Lush greenery and a clear blue sky should complement the sustainable energy sources, emphasizing nature and environment.">
         </div>
         <div class="intput_section">
-            <input id="in_first" type="number" min="0" max="10">
-            <input id="in_second" type="number" min="0" max="10">
-            <input id="in_third" type="number" min="0" max="10">
+            <input id="in_first" type="number" min="0" max="10" value="0">
+            <input id="in_second" type="number" min="0" max="10" value="0">
+            <input id="in_third" type="number" min="0" max="10" value="0">
+        </div>
+
+        <div class="respond_stickers">
+            <p id="ans_sticker"></p>
+        </div>
+
+        <div class="button_stickers">
+            <button onclick="sticker_answer()">Check Total</button>
         </div>
     </section>
 
-    <p id="ans_sticker"></p>
 
-    <script src="./assets/js/js_condition.js"></script>
+
+    <script>
+
+        function sticker_answer() {
+            var sticker_num1 = parseInt(document.getElementById("in_first").value,10);
+            var sticker_num2 = parseInt(document.getElementById("in_second").value,10);
+            var sticker_num3 = parseInt(document.getElementById("in_third").value,10);
+
+            var answer_sticker =  document.getElementById("ans_sticker");
+
+            const TOTAL_STICKERS = sticker_num1+sticker_num2+sticker_num3;
+
+            if (TOTAL_STICKERS > 10) {
+                answer_sticker.innerHTML = "You can only choose 10 stickers in total";
+            }
+            else if (TOTAL_STICKERS < 10) {
+                answer_sticker.innerHTML = `You can still choose ${10 - TOTAL_STICKERS} stickers`;
+            }
+            else {
+                answer_sticker.innerHTML = "Awesome you have chosen exactly 10 Sticker!"
+            }
+
+            //alert(sticker_num1)//
+        }
+
+    </script>
 </body>
 </html>
