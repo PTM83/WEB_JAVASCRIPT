@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="./assets/css/function_style.css">
+
+    <title>Four Colors</title>
+</head>
+<body>
+
+<section class="container">
+    <div id="first" class="colorDiv"> First </div>
+    <div id="second" class="colorDiv"> Second </div>
+    <div id="third" class="colorDiv"> Third </div>
+    <div id="four" class="colorDiv"> Four </div>
+</section>
+
+<div id="key">
+</div>
+</body>
+
+<script>
+
+    const first_colors = ['blue','red','green','yellow'];
+
+    document.querySelector('#first').style.backgroundColor = first_colors[0];
+    document.querySelector('#second').style.backgroundColor = first_colors[1];
+    document.querySelector('#third').style.backgroundColor = first_colors[2];
+    document.querySelector('#four').style.backgroundColor = first_colors[3];
+
+    document.querySelectorAll('.colorDiv').forEach(function(div) {
+        div.style.width = '200px';
+        div.style.height = '200px';
+    });
+
+    /*document.querySelectorAll('div').forEach(function(div){
+        div.addEventListener('click', function() {
+            this.style.backgroundColor = 'black';
+        });
+    });*/
+
+// Inicializar un objeto para almacenar los colores originales
+    let originalColors = {};
+
+// Seleccionar todos los divs con la clase 'colorDiv'
+    const divs = document.querySelectorAll('.colorDiv');
+
+// Asignar el color original de cada div y configurar el evento de click
+    divs.forEach(function(div){
+
+    // Guardar el color original en el objeto
+        originalColors[div.id] = div.style.backgroundColor;
+
+    // Agregar el evento de clic con addEventListener
+        div.addEventListener('click',function() {
+
+            // Restablecer el color de todos los divs a su original
+            divs.forEach(function(d){
+                d.style.backgroundColor = originalColors[d.id];
+            });
+            // Cambiar el color de fondo del elemento clickeado a negro
+            this.style.backgroundColor = 'black';
+        });
+    });
+
+    /*SECOND PART*/
+
+const keyColors = {
+    'a':'pink',
+    's':'orange',
+    'd':'lightblue',
+}
+
+const keyDiv = document.querySelector('#key');
+
+document.addEventListener('keydown', function(event){
+    const color = keyColors[event.key];
+
+    if(color){
+    keyDiv.style.backgroundColor = color;
+    };
+});
+
+document.addEventListener('keydown',function(event){
+    const keyColors2 = {
+        'q':'purple',
+        'w':'gray',
+        'e':'brown',
+    };
+
+    const newColor = keyColors2[event.key];
+
+    if(newColor){
+        const newDiv = document.createElement("div");
+        newDiv.style.width = '200px';
+        newDiv.style.height = '200px';
+        newDiv.style.margin = '1.5rem 0';
+        newDiv.style.background = newColor;
+        document.body.appendChild(newDiv);
+    };
+});
+
+
+</script>
+
+</html>
