@@ -33,7 +33,7 @@ const rent_properties = [
     pets: false
 },
 {   name: 'Apartamento acogedor con chimenea',
-    src: '../assets/img/DALL·E 2023-11-14 14.35.10.png',
+    src: './assets/img/img1.png',
     description: 'Este apartamento te ofrece un ambiente cálido y confortable con una chimenea de leña',
     location: '123 Main Street, Mountain View, CO 12345',
     rooms: 2,
@@ -44,7 +44,7 @@ const rent_properties = [
 },
 
 {   name: 'Apartamento moderno con piscina',
-    src: '../assets/img/DALL·E 2023-11-14 14.35.10.png',
+    src: './assets/img/img3.png',
     description: 'Este apartamento te ofrece un estilo de vida sofisticado y elegante con una piscina privada',
     location: '789 Park Avenue, Downtown, NY 67890',
     rooms: 4,
@@ -55,7 +55,7 @@ const rent_properties = [
 },
 
 {   name: 'Apartamento rústico con jardín',
-    src: '../assets/img/DALL·E 2023-11-14 14.35.10.png',
+    src: './assets/img/img2.png',
     description: 'Este apartamento te ofrece un contacto directo con la naturaleza y un ambiente tranquilo y relajado con un jardín lleno de flores',
     location: '456 Country Road, Green Valley, TX 45678',
     rooms: 3,
@@ -66,7 +66,7 @@ const rent_properties = [
 },
 
 {   name: 'Apartamento minimalista con balcón',
-    src: '../assets/img/DALL·E 2023-11-14 14.35.10.png',
+    src: './assets/img/img2.png',
     description: 'Este apartamento te ofrece un espacio limpio y ordenado con un balcón que te permite disfrutar de la vista de la ciudad',
     location: '123 Skyline Drive, High Rise, FL 34567',
     rooms: 2,
@@ -76,7 +76,7 @@ const rent_properties = [
     pets: false
 }
 ]
-
+/*
 const rentApartment = document.getElementsByClassName("row")[1];
 
 let rent = "";
@@ -134,3 +134,4 @@ for(let i = 0; i < 3; i++) {
 }
 
 rentApartment.innerHTML = rent;
+*/

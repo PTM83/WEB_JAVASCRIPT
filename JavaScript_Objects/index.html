@@ -74,6 +74,7 @@
 
     <script src="./assets/js/sold.js"></script>
 
+    <script>
     const soldApartment = document.getElementsByClassName("row")[0];
 
     let Apartment = "";
@@ -132,8 +133,68 @@
 
         soldApartment.innerHTML = Apartment;
 
-
+    </script>
     <script src="./assets/js/rent.js"></script>
+
+    <script>
+      const rentApartment = document.getElementsByClassName("row")[1];
+
+      let rent = "";
+
+      for(let i = 0; i < 3; i++) {
+
+          let SmokePolicy = rent_properties[i].smoke ? `
+              <p class="text-success">
+                  <i class="fas fa-smoking"></i> Se permite fumar
+              </p>
+              `: `
+              <p class="text-danger">
+                  <i class="fas fa-smoking-ban"></i> No se permite fumar
+              </p>`;
+
+          let petsPolicy = rent_properties[i].pets ? `
+              <p class="text-success">
+                  <i class="fas fa-paw"></i> Mascotas permitidas
+              </p>`: `
+              <p class="text-danger">
+                  <i class="fa-solid fa-ban"></i> No se permiten Mascotas
+              </p>`;
+
+          rent += `
+          <div class="col-md-4 mb-4">
+              <div class="card">
+                  <img
+                  src= ${rent_properties[i].src}
+                  class="card-img-top"
+                  alt="Imagen del departamento"
+                  />
+                  <div class="card-body">
+                      <h5 class="card-title">
+                          ${rent_properties[i].name}
+                      </h5>
+                      <p class="card-text">
+                          ${rent_properties[i].description}
+                      </p>
+                      <p>
+                          <i class="fas fa-map-marker-alt"></i> ${rent_properties[i].location}
+                      </p>
+                      <p>
+                          <i class="fas fa-bed"></i> ${rent_properties[i].rooms} Habitaciones
+                          <i class="fas fa-bath"></i> ${rent_properties[i].bathrooms} Baños
+                      </p>
+                      <p><i class="fas fa-dollar-sign"></i> ${rent_properties[i].cost}</p>
+
+                      ${SmokePolicy}
+                      ${petsPolicy}
+
+                  </div>
+              </div>
+          </div>
+          `;
+      }
+
+      rentApartment.innerHTML = rent;
+    </script>
 
     <!-- Font awesome -->
     <script

@@ -33,7 +33,7 @@ const sold_properties = [
     pets: true
 },
 {   name: 'Apartamento espacioso con sauna',
-    src: './assets/img/DALL·E 2023-11-14 14.35.10.png',
+    src: './assets/img/img1.png',
     description: 'Este apartamento te ofrece un espacio amplio y luminoso con una sauna de vapor para relajarte',
     location: '456 Spa Street, Wellness City, MI 78901',
     rooms: 3,
@@ -44,7 +44,7 @@ const sold_properties = [
 },
 
 {   name: 'Apartamento artístico con galería',
-    src: './assets/img/DALL·E 2023-11-14 14.35.10.png',
+    src: './assets/img/img2.png',
     description: 'Este apartamento te ofrece un ambiente creativo y colorido con una galería de arte donde puedes admirar y comprar obras de artistas locales',
     location: '123 Art Avenue, Culture Town, IL 23456',
     rooms: 2,
@@ -55,7 +55,7 @@ const sold_properties = [
 },
 
 {   name: 'Apartamento ecológico con huerto',
-    src: './assets/img/DALL·E 2023-11-14 14.35.10.png',
+    src: './assets/img/img3.png',
     description: 'Este apartamento te ofrece un estilo de vida sostenible y saludable con un huerto donde puedes cultivar y cosechar tus propias verduras y frutas',
     location: '789 Green Lane, Eco Village, WA 34567',
     rooms: 3,
@@ -65,7 +65,7 @@ const sold_properties = [
     pets: true
 },
 {   name: 'Apartamento lujoso con jacuzzi',
-    src: './assets/img/DALL·E 2023-11-14 14.35.10.png',
+    src: './assets/img/img1.png',
     description: 'Este apartamento te ofrece un nivel de confort y glamour incomparable con un jacuzzi de hidromasaje donde puedes disfrutar de una copa de champagne',
     location: '456 Luxury Boulevard, Glamour City, NV 56789',
     rooms: 4,
