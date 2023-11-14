@@ -32,20 +32,51 @@ const sold_properties = [
     smoke: false,
     pets: true
 },
-{
-    name:  '',
-    src: '',
-    description: '',
-    location: '',
-    rooms: 0,
-    bathrooms: 0,
-    cost: 0,
+{   name: 'Apartamento espacioso con sauna',
+    src: './assets/img/DALL·E 2023-11-14 14.35.10.png',
+    description: 'Este apartamento te ofrece un espacio amplio y luminoso con una sauna de vapor para relajarte',
+    location: '456 Spa Street, Wellness City, MI 78901',
+    rooms: 3,
+    bathrooms: 2,
+    cost: 3000,
+    smoke: false,
+    pets: false
+},
+
+{   name: 'Apartamento artístico con galería',
+    src: './assets/img/DALL·E 2023-11-14 14.35.10.png',
+    description: 'Este apartamento te ofrece un ambiente creativo y colorido con una galería de arte donde puedes admirar y comprar obras de artistas locales',
+    location: '123 Art Avenue, Culture Town, IL 23456',
+    rooms: 2,
+    bathrooms: 1,
+    cost: 2000,
+    smoke: true,
+    pets: true
+},
+
+{   name: 'Apartamento ecológico con huerto',
+    src: './assets/img/DALL·E 2023-11-14 14.35.10.png',
+    description: 'Este apartamento te ofrece un estilo de vida sostenible y saludable con un huerto donde puedes cultivar y cosechar tus propias verduras y frutas',
+    location: '789 Green Lane, Eco Village, WA 34567',
+    rooms: 3,
+    bathrooms: 2,
+    cost: 2500,
+    smoke: false,
+    pets: true
+},
+{   name: 'Apartamento lujoso con jacuzzi',
+    src: './assets/img/DALL·E 2023-11-14 14.35.10.png',
+    description: 'Este apartamento te ofrece un nivel de confort y glamour incomparable con un jacuzzi de hidromasaje donde puedes disfrutar de una copa de champagne',
+    location: '456 Luxury Boulevard, Glamour City, NV 56789',
+    rooms: 4,
+    bathrooms: 3,
+    cost: 4000,
     smoke: true,
     pets: false
 }
 ]
 
-const soldApartment = document.getElementsByClassName("row")[0];
+/*const soldApartment = document.getElementsByClassName("row")[0];
 
 
 let Apartment = "";
@@ -103,3 +134,4 @@ for(let i = 0; i < 3; i++) {
 }
 
 soldApartment.innerHTML = Apartment;
+*/
