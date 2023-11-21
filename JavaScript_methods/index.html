@@ -25,7 +25,7 @@
 
             <div class="textArea">
                 <p id="totalTask"></p>
-                <p id="TaskDone">Complete </p>
+                <p id="TaskDone"></p>
             </div>
 
         </form>
@@ -42,9 +42,32 @@
 
                 </tbody>
             </table>
+
+            <div class="actionDone">
+                <p>Eliminar Tareas Realizadas</p>
+                <button type="submit" id="endTask" onclick="addCompleteTask()">Done</button>
+            </div>
+
+        </div>
+
+        <div id="CompleteTable">
+
+            <h2>Tabla Con tareas completadas</h2>
+
+            <table id="DoneTable" border="1">
+                <thead>
+                    <th>ID</th>
+                    <th>TASK</th>
+                </thead>
+
+                <tbody>
+
+                </tbody>
+            </table>
         </div>
 
     </section>
+
 
 
     <script src="./assets/js/methods.js"></script>

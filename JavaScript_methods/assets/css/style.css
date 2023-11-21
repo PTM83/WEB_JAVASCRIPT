@@ -6,6 +6,7 @@
 body {
 --backgroundColor: #B2D8EE;
 --colorButton: #DE4D05;
+--endButton: #7ECDBB;
 }
 
 .container {
@@ -48,10 +49,32 @@ table {
     width: 100%;
 }
 
-tbody, tr, td {
-    align:center;
+.actionDone {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#CompleteTable, h2 {
+    text-transform: uppercase;
+}
+
+#endTask {
+    background-color: var(--endButton);
+    font-size: 1.2rem;
+    padding: 0 1.2rem;
+    border-radius: 0.25rem;
+}
+
+.actionDone p {
+    font-size:1.2rem;
+    font-weight: 900;
 }
 
 #addTable {
+    padding-top: 1.2rem;
+}
+
+#CompleteTable {
     padding-top: 1.2rem;
 }
