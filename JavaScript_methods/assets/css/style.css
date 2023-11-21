@@ -1,0 +1,57 @@
+* {
+    padding: 0;
+    margin :0;
+}
+
+body {
+--backgroundColor: #B2D8EE;
+--colorButton: #DE4D05;
+}
+
+.container {
+    padding: 50% 20%;
+}
+
+form {
+    border: 1px solid black;
+    border-radius: 0.25rem;
+    background: var(--backgroundColor);
+    padding: 1rem 0.8rem;
+}
+
+.title {
+    border-bottom: 1px solid black;
+    padding: 0.25rem 0;
+}
+
+form, h1, h3 {
+    text-transform: uppercase;
+}
+
+input {
+    width: 84%;
+    font-size: 1.5rem;
+}
+
+button {
+    background-color: var(--colorButton);
+    font-size: 1.5rem;
+    padding: 0 1.2rem;
+    border-radius: 0.25rem;
+}
+
+.textArea {
+    padding: 0.25rem 0;
+}
+
+table {
+    width: 100%;
+}
+
+tbody, tr, td {
+    align:center;
+}
+
+#addTable {
+    padding-top: 1.2rem;
+}
