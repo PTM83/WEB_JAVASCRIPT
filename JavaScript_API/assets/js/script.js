@@ -159,10 +159,13 @@ function setupChart() {
             const response = await fetch(endpoint);
             const ans = await response.json();
 
-            const labels = ans.serie.map(answer => answer.fecha.substring(0,10));
-            const data = ans.serie.map(answer => answer.valor);
+            const labels1 = ans.serie.map(answer => answer.fecha.substring(0,10));
+            const labels = labels1.reverse().slice(0,10);
 
-            console.log(data);
+            const data1 = ans.serie.map(answer => answer.valor);
+            const data = data1.reverse().slice(0,10);
+
+            //console.log(data);
 
             // Aquí debes procesar los labels y valores, por ejemplo, crear un gráfico
 
