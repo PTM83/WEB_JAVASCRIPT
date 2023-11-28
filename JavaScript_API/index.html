@@ -6,7 +6,11 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <!--CSS-->
     <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!--Graph-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     <title>Conversor de Monedas</title>
 </head>
@@ -30,13 +34,13 @@
 
         <h2>Result: <span id="resultadoConversion"></span></h2>
 
-        <div id="graficoHistorial">
-
+        <div>
+            <canvas id="myChart"></canvas>
         </div>
 
     </section>
-
     <script src="./assets/js/script.js"></script>
+
 
 </body>
 </html>
